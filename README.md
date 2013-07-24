@@ -11,4 +11,6 @@ var elastic = new Client({
 });
 ```
 
+## Docs
 
+TODO: Please refer to tests for now :(
