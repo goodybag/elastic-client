@@ -1,5 +1,5 @@
 {
-  "name": "elasticclient",
+  "name": "elasticness",
   "version": "0.1.1",
   "description": "Simple elasticsearch client",
   "main": "index.js",

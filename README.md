@@ -1,4 +1,4 @@
-# Elastic Client
+# Elasticness
 
 This is a simple [elasticsearch](http://elasticsearch.org) client for node.js. It wraps the http requests to your elasticsearch server. Here's how you use it.
 
