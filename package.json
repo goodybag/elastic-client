@@ -1,0 +1,36 @@
+{
+  "name": "elasticclient",
+  "version": "0.1.0",
+  "description": "Simple elasticsearch client",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodybag/elastic-client.git"
+  },
+  "keywords": [
+    "elastic",
+    "search",
+    "elasticsearch",
+    "elastic",
+    "client",
+    "elastic-client"
+  ],
+  "author": "John Fawcett",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "adc4439078b9cda8b62d7bc77af88f3034880762",
+  "dependencies": {
+    "async": "~0.2.9",
+    "request": "~2.27.0",
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0"
+  }
+}
