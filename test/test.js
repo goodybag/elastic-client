@@ -179,6 +179,20 @@ describe ('Elastic Searchin', function(){
       var myClient = new Client(options);
 
       assert.equal( myClient.host, options.host );
+      assert.equal( myClient.port, 80 );
+      assert.equal( myClient.index, options.index );
+    });
+
+    it ('should instantiate a new client with https', function(){
+      var options = {
+        host:   'https://my-elastic-search.com'
+      , index:  'staging'
+      };
+
+      var myClient = new Client(options);
+
+      assert.equal( myClient.host, options.host );
+      assert.equal( myClient.port, 443 );
       assert.equal( myClient.index, options.index );
     });
 
