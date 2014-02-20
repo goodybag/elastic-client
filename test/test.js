@@ -304,7 +304,6 @@ describe ('Elastic Searchin', function(){
     it ('should get the server info', function(done){
       elastic.info(function(error, info){
         assert.equal( !error, true );
-        assert.equal( info.ok, true );
         assert.equal( info.status, 200 );
         assert.equal( !!info.name, true );
 
@@ -324,7 +323,6 @@ describe ('Elastic Searchin', function(){
 
       elastic.save('product', doc, function(error, result){
         assert.equal( !error, true );
-        assert.equal( result.ok, true );
         assert.equal( result._id, doc.id );
 
         done();
@@ -338,7 +336,6 @@ describe ('Elastic Searchin', function(){
 
       elastic.save('product', doc, function(error, result){
         assert.equal( !error, true );
-        assert.equal( result.ok, true );
         assert.equal( !!result._id, true );
 
         done();
@@ -353,14 +350,12 @@ describe ('Elastic Searchin', function(){
 
       elastic.save('product', doc, function(error, result){
         assert.equal( !error, true );
-        assert.equal( result.ok, true );
         assert.equal( result._id, doc.id );
 
         doc.poop = true;
 
         elastic.save('product', doc, function(error, result){
           assert.equal( !error, true );
-          assert.equal( result.ok, true );
           assert.equal( result._id, doc.id );
 
           elastic.get('product', doc.id, function(error, result){
@@ -392,7 +387,6 @@ describe ('Elastic Searchin', function(){
 
       elastic.save('product', doc, function(error, result){
         assert.equal( !error, true );
-        assert.equal( result.ok, true );
         assert.equal( result._id, doc.id );
 
         elastic.get('product', doc.id, function(error, result){
@@ -534,7 +528,6 @@ describe ('Elastic Searchin', function(){
 
       elastic.save('product', doc, function(error, result){
         assert.equal( !error, true );
-        assert.equal( result.ok, true );
         assert.equal( result._id, doc.id );
 
         elastic.get('product', doc.id, function(error, result){
@@ -543,7 +536,6 @@ describe ('Elastic Searchin', function(){
 
           elastic.del('product', doc.id, function(error, result){
             assert.equal( !error, true );
-            assert.equal( result.ok, true );
 
             elastic.get('product', doc.id, function(error, result){
               assert.equal( !error, true );
